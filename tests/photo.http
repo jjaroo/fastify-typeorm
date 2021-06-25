@@ -1,0 +1,31 @@
+@host = http://127.0.0.1:3000
+
+### get all
+GET {{host}}/photos HTTP/1.1
+Content-Type: application/json
+
+### get one
+GET {{host}}/photos/1 HTTP/1.1
+Content-Type: application/json
+
+### update
+PUT {{host}}/photos/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Paul Kim",
+    "description": "Most of the times you want to store your connection options in a separate configuration file. It makes it convenient and easy to manage. TypeORM supports multiple configuration sources. You only need to create a ormconfig.[format] file in the root directory of your application (near package.json), put your configuration there and in your app call createConnection() without any configuration passed",
+}
+
+### insert
+POST {{host}}/photos HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "John Doe",
+    "description": "Most of the times you want to store your connection options in a separate configuration file. It makes it convenient and easy to manage. TypeORM supports multiple configuration sources. You only need to create a ormconfig.[format] file in the root directory of your application (near package.json), put your configuration there and in your app call createConnection() without any configuration passed"
+}
+
+### delete
+DELETE {{host}}/photos/5 HTTP/1.1
+Content-Type: application/json

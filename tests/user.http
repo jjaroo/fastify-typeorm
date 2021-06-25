@@ -1,0 +1,30 @@
+@host = http://127.0.0.1:3000
+
+### get all
+GET {{host}}/users HTTP/1.1
+Content-Type: application/json
+
+### get one
+GET {{host}}/users/1 HTTP/1.1
+Content-Type: application/json
+
+### insert
+POST {{host}}/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mike Tyson",
+    "email": "miketyson@example.com"
+}
+
+### update
+PUT {{host}}/users/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "mike-love@example.com"
+}
+
+### delete
+DELETE {{host}}/users/4 HTTP/1.1
+Content-Type: application/json

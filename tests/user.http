@@ -13,8 +13,8 @@ POST {{host}}/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Mike Tyson",
-    "email": "miketyson@example.com"
+    "name": "John Doe",
+    "email": "johndoe@example.com"
 }
 
 ### update

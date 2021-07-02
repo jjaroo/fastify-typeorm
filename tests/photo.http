@@ -14,7 +14,7 @@ Content-Type: application/json
 
 {
     "title": "Paul Kim",
-    "description": "Most of the times you want to store your connection options in a separate configuration file. It makes it convenient and easy to manage. TypeORM supports multiple configuration sources. You only need to create a ormconfig.[format] file in the root directory of your application (near package.json), put your configuration there and in your app call createConnection() without any configuration passed",
+    "description": "Most of the times you want to store your connection options in a separate configuration file. It makes it convenient and easy to manage. TypeORM supports multiple configuration sources. You only need to create a ormconfig.[format] file in the root directory of your application (near package.json), put your configuration there and in your app call createConnection() without any configuration passed"
 }
 
 ### insert
